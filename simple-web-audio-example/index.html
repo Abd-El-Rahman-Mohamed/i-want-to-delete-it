@@ -27,7 +27,7 @@
       // play/pause audio
       playBtn.addEventListener("click", () => {
         // check if context is in suspended state (autoplay policy)
-        if (audioCtx === "suspended") {
+        if (audioCtx.state === "suspended") {
           audioCtx.resume();
         }
 
