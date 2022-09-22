@@ -49,6 +49,15 @@
         playBtn.setAttribute("class", "paused");
         playBtn.textContent = "Play";
       });
+      
+      // volume
+      const gainNode = audioCtx.createGain();
+
+      volumeSlider.addEventListener("input", () => {
+        gainNode.gain.value = volumeSlider.value;
+      });
+
+      audioSource.connect(gainNode).connect(audioCtx.destination);
     </script>
   </body>
 </html>
