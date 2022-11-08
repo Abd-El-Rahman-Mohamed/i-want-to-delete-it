@@ -17,18 +17,14 @@ let data = [
 
 /*Accessing the button the user will */
 let btn = document.getElementById('generate_button');
-// let bd = document.getElementsByTagName('body');
 let para = document.getElementById('generated-food');
 
-function randInt(min, max) {
+function randInt(max) {
     return Math.trunc( Math.random() * max );
 }
 
 btn.addEventListener('click', () => {
-    let generated = data[randInt(0,data.length)];
-    para.textContent = `${generated}`;
-    // let br = document.createElement('br');
-    // para.appendChild(br);
-    // para.textContent +=  + '';
+    let generated = data[randInt(data.length)];
+    para.textContent = 'ممكن تاكل: 💭' + `${generated}`;
 });
 
