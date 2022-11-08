@@ -61,16 +61,6 @@ section.generating-box button {
     font-weight: bolder;
 }
 
-.you-can-eat {
-    font-weight: bolder;
-    width: 80vw;
-    margin: auto;
-    margin-top: 25px;
-    margin-bottom: 5px;
-    color: white;
-    text-align: center; 
-}
-
 #generated-food {
     font-weight: bolder;
     width: 80vw;
