@@ -1,0 +1,28 @@
+body {
+    width: 80%;
+    
+    /* To make the content centered */
+    margin: 0 auto;
+    text-align: center;
+
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+textarea {
+    font-size: larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 390px;
+}
+
+#submitQ {
+    width: 100px;
+    font-size: 20px;
+}
+
+.blackBackground {
+    background-color: black;
+}
+
+.whiteColored {
+    color: white;
+}
