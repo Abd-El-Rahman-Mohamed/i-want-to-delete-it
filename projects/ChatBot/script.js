@@ -5,7 +5,9 @@ let ask = "";
 let url = "";
 let ans = "";
 
-askBTN.addEventListener('click', () => {
+askBTN.addEventListener('click', clickedAskBTN);
+
+function clickedAskBTN() {
     console.log('btn is clicked');
     ask = theQ.value;
     url = "https://api.pawan.krd/chat/gpt?text=" + urlParser(ask) + "&lang=en/gpt.json";
@@ -16,8 +18,7 @@ askBTN.addEventListener('click', () => {
         .then(data => myJSON = data)
         .then(() => console.log(myJSON))
         .catch(error => console.error(error));
-});
-
+}
 // To make the question able to be sent
 function urlParser(beforeParse) {
     return "" + beforeParse.replaceAll(" ", "%20");
