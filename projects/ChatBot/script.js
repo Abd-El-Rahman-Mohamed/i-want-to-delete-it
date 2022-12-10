@@ -8,9 +8,8 @@ let ans = "";
 askBTN.addEventListener('click', clickedAskBTN);
 
 function clickedAskBTN() {
-    console.log('btn is clicked');
+    console.log('The output of this question:');
     ask = theQ.value;
-    url = "https://api.pawan.krd/chat/gpt?text=" + urlParser(ask) + "&lang=en/gpt.json";
 
     let myJSON;
     fetch(url)
