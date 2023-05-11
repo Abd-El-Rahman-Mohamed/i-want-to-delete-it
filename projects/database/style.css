@@ -28,9 +28,9 @@ body {
     gap: 2vh;
     flex-direction: column;
     background-color: transparent;
-    backdrop-filter: blur(3px);
-    box-shadow: 1px 1px 1px 1px;
-    border: 1px outset white;
+    backdrop-filter: blur(0.2vw);
+    box-shadow: 0.07vw 0.07vw 0.07vw 0.07vw;
+    border: 0.1vw outset white;
     border-radius: 3%;
 }
 
@@ -45,14 +45,14 @@ body {
     width: 8vw;
     height: 5vh;
     align-self: center;
-    font-size: medium;
+    font-size: 1.3vw;
     background: linear-gradient(to top, #09203f 0%, #537895 100%);
     color: white;
     box-shadow: none;
-    border: 1px solid #555555;
-    border-radius: 25px;
+    border: 0.1vw solid #555555;
+    border-radius: 25vw;
 }
 
 #sign-in-and-up-wrapper #signin:active, #sign-in-and-up-wrapper #signup:active  {
-    box-shadow: 1px 1px 1px 1px;
+    box-shadow: 0.07vw 0.07vw 0.07vw 0.07vw;
 }
