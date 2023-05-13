@@ -4,10 +4,24 @@ body {
 }
 
 body {
+    position: relative;
     height: 100vh;
     width: 100vw;
     margin: 0;
     background-color: #F1F0CF;
+}
+
+header {
+    margin-top: 0;
+    background-color: #000000;
+    height: 8vh;
+}
+
+header h1 {
+    background-color: #000000;
+    padding-top: 1vh;
+    margin-top: 0vh;
+    color: #FFFFFF;
 }
 
 #container {
@@ -55,4 +69,124 @@ body {
 
 #sign-in-and-up-wrapper #signin:active, #sign-in-and-up-wrapper #signup:active  {
     box-shadow: 0.07vw 0.07vw 0.07vw 0.07vw;
+}
+
+.center {
+    text-align: center;
+}
+
+.font-verdana {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.post-container {
+    margin: 11.8vh auto 11.8vh auto;
+    background-color: #00569d;
+    width: 54.2vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+.post-header {
+    background-color: #FFFFFF;
+    max-width: 100%;
+    height: 10%;
+    padding: 1vh;
+}
+.post-header p {
+    line-height: 0vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+}
+.person-img {
+    border: 5px solid #282828;
+    background-color: #282828;
+    border-radius: 100%;
+    font-size: 3vh;
+    margin-right: 0.5vw;
+}
+.post-body {
+    height: 70%;
+}
+.post-body p {
+    padding: 2vh 3vw 2vh 3vw;
+    color: white;
+    font-size: 150%;
+}
+.post-caption {
+    margin-top: 0;
+    height: 10%;
+    width: 100%;
+    background-color: #eeeeee;
+}
+.post-caption p {
+    margin-top: 0;
+    padding: 1.5vh;
+}
+.post-tail {
+    max-width: 100%;
+    height: 10%;
+    padding: 1vh;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+.post-tail button{
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    border: 0;
+    border-top: 2px solid white;
+    background-color: #a4b3c0;
+    font-size: 3vh;
+    box-shadow: 0px 0px 5px 0px;
+}
+.post-tail button:active, .create-a-post button:active{
+    box-shadow: 0px 0px 50px 0px;
+    cursor: pointer
+}
+.post-tail button:hover, .create-a-post button:hover{
+    cursor: pointer
+}
+.create-a-post {
+    position: fixed; 
+    bottom: 7vh;
+    right: 5vw;
+}
+.create-a-post button{
+    background-color: #a4b3c0;
+    border: 1px solid #a4b3c0;
+    border-radius: 100%;
+    width: fit-content;
+    height: 5vh;
+    width: 5vh;
+    text-align: center;
+    line-height: 5vh;
+    font-size: 5vh;
+    color: white;
+}
+.create-a-post button span{
+    background-color: #a4b3c0;
+    border: 1px solid #a4b3c0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: fit-content;
+    height: 5vh;
+    width: 20vh;
+    line-height: 5vh;
+    text-align: center;
+    color: white;
+    position: fixed;
+    bottom: 11vh;
+    right: 5vw;
+}
+.create-a-post button span{
+    display: none;
+    font-size: 1vw;
+}
+.create-a-post button:focus span, .create-a-post button:hover span {
+    display: block;
+}
+.create-a-post button span:active {
+    box-shadow: 0px 0px 50px 0px;
+    cursor: pointer
 }
